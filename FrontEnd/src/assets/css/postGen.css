@@ -1,0 +1,143 @@
+.generator__container {
+  width: 90%;
+  max-width: 800px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(18px + 1.5vmin);
+
+  background-color: var(--container-color);
+
+  border-radius: 15px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+}
+
+.generator__container img {
+  width: 100%;
+
+  height: auto;
+
+  margin: auto;
+}
+
+.social_media {
+  margin: 20px auto;
+}
+
+.post-container {
+  padding: 10px 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.post-container label {
+  color: var(--text-color);
+  font-weight: 900;
+  font-family: 'Cinzel Decorative', cursive;
+  margin: 10px 0;
+  margin-bottom: 3px;
+  font-size: 18px;
+  text-wrap: wrap;
+}
+
+.post-container textarea {
+  width: 90%;
+  max-width: 600px;
+  height: 100px;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  font-size: 20px;
+  font-family: 'Cinzel;', cursive;
+}
+
+.post_text {
+  margin: 20px auto;
+}
+
+.post-container textarea::placeholder {
+  color: rgb(73, 72, 72);
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+.post-container input[type='text'] {
+  border-radius: 5px;
+  max-width: 50%;
+  font-family: 'Cinzel', serif;
+  border: 1px solid var(--primary-color);
+  text-align: center;
+}
+
+.row_1,
+.row_2,
+.row_3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.post-container input[type='checkbox'],
+.row_1 input[type='checkbox'],
+.row_2 input[type='checkbox'] {
+  padding: 5px;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.834);
+  border: 1px solid white;
+  font-size: 20px;
+  accent-color: dodgerblue;
+}
+
+.row_1 label,
+.row_2 label {
+  width: 45%;
+  color: var(--primary-color);
+  font-family: 'Cinzel Decorative', cursive;
+  margin: auto;
+  font-size: 18px;
+}
+
+.keywords_select p {
+  color: rgb(84, 83, 83);
+  font-style: italic;
+  margin: 0px auto;
+}
+
+.post-container input[type='text'] {
+  color: navy;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 3px auto;
+  width: 90%;
+  max-width: 450px;
+  font-size: 20px;
+}
+
+.post-container h4 {
+  font-family: 'Cinzel Decorative', cursive;
+  margin: auto;
+  font-weight: 300;
+  font-size: 20px;
+}

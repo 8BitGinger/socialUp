@@ -1,0 +1,27 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: 400%;
+  background-position: left;
+  animation: bg-animation linear 2s infinite;
+
+  background: linear-gradient(-65deg, #f78d3b, #0382f8, #f78d3b);
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
