@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { RiHomeHeartFill } from 'react-icons/ri';
-import { FcAbout } from 'react-icons/fc';
-import { RiQuestionnaireFill } from 'react-icons/ri';
-import { FaUserAstronaut } from 'react-icons/fa';
+import { BsEnvelopeAtFill } from "react-icons/bs";
 
-import { GrLogin } from 'react-icons/gr';
+import { RiQuestionnaireFill } from 'react-icons/ri';
+// import { FaUserAstronaut } from 'react-icons/fa';
+
+// import { GrLogin } from 'react-icons/gr';
 
 import '../assets/css/navbar.css';
 
 const NavBar = () => {
+  window.scrollTo(0, 0);
   return (
     <nav className="navbar">
       <Link to="/" className="navbar__link">
@@ -18,12 +20,14 @@ const NavBar = () => {
       <Link to="/about" className="navbar__link">
         <RiQuestionnaireFill />
       </Link>
-      <Link to="/profile" className="navbar__link">
-        <FaUserAstronaut />
+      <Link to="/contact" className="navbar__link">
+      <BsEnvelopeAtFill />
+
+
       </Link>
-      <Link to="/login" className="navbar__link">
+      {/* <Link to="/login" className="navbar__link">
         <GrLogin />
-      </Link>
+      </Link> */}
     </nav>
   );
 };

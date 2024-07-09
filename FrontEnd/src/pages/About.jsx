@@ -11,9 +11,10 @@ const About = () => {
 
         <p>
           <span className="primary">SocialUP↑</span>
+          <br></br>
           automatically formats your post to have the same content work for
           multiple social media sites. Don&apos;t worry about the character
-          count on Twitter, or trying to find an image to accompany your text on
+          count on Twitter, or trying to find the right approach on
           Instagram, what about the hassle of redrafting to sound more
           professional on LinkedIN?
           <br></br>
@@ -28,7 +29,7 @@ const About = () => {
         <h2>Features:</h2>
         <ul>
           <li>Text Upscaling</li>
-          <li>Image Generation</li>
+         
           <li>Multi-Platform Formatting</li>
           <li>Simplicity and Ease!</li>
         </ul>
@@ -43,11 +44,10 @@ const About = () => {
         </ul>
       </section>
 
-      <section className="about2">
+      <section className="about">
         <h2>Powered by Gemini</h2>
         <p>
-          Gemini is a powerful AI API that can generate text, images, and even
-          format text to fit the needs of the user. Gemini is the backbone of
+           Gemini is the backbone of
           SocialUP↑ and is the reason that it can do all the amazing things that
           it can.{' '}
           <span className="primary2">

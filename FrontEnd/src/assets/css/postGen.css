@@ -1,6 +1,6 @@
 .generator__container {
   width: 90%;
-  max-width: 800px;
+  max-width: 850px;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
 
   height: auto;
   border-bottom: var(--primary-color) 3px solid;
-  margin: auto;
+  
 }
 
 .social_media {
@@ -65,7 +65,8 @@
   border-radius: 5px;
   border: 1px solid var(--primary-color);
   font-size: 20px;
-  font-family: 'Cinzel;', cursive;
+  font-family: 'Cinzel;', serif;
+  text-align: center;
 }
 
 .post_text {
@@ -87,6 +88,10 @@
   text-align: center;
 }
 
+.sections {
+  margin: 10px auto;
+}
+
 .row_1,
 .row_2,
 .row_3 {
@@ -95,19 +100,46 @@
   justify-content: center;
   align-items: center;
   color: black;
+  flex-wrap: wrap;
+  padding: 5px auto;
+}
+
+.row_2 {
+  width: 50%;
+}
+
+.row_3 {
+  width: 100%;
+}
+
+.row_3 label {
+  font-family: 'Cinzel Decorative', cursive;
+  margin: auto;
+  font-weight: 300;
+  color: black !important;
+
+}
+
+.row_4 {
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  color: black;
+  flex-wrap: wrap;
+  
+  width: 50%;
+
 }
 
 .post-container input[type='checkbox'],
 .row_1 input[type='checkbox'],
 .row_2 input[type='checkbox'] {
-  padding: 5px;
-  height: 20px;
-  width: 20px;
-  margin: 5px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.834);
-  border: 1px solid white;
-  font-size: 20px;
+
+  height: 15px;
+  width: 15px;
+
+
   accent-color: dodgerblue;
 }
 
@@ -134,10 +166,16 @@
   border-top: var(--primary-color) 3px solid;
 }
 
+.keywords_select {
+  display: flex;
+  flex-direction: column;
+}
+
 .keywords_select p {
   color: rgb(84, 83, 83);
   font-style: italic;
   margin: 0px auto;
+  font-size: 16px;
 }
 
 .post-container input[type='text'] {
@@ -147,12 +185,80 @@
   margin: 3px auto;
   width: 60%;
   max-width: 450px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-.post-container h4 {
+.post-container input[type='text']:focus {
+  border: 1px solid var(--secondary-color);
+}
+
+.row_4 label {
   font-family: 'Cinzel Decorative', cursive;
   margin: auto;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 45px;
+  display: flex;
+width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: black;
+}
+
+.row_2 label {
+  font-family: 'Cinzel Decorative', cursive;
+  margin: auto;
+  font-weight: 300;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: black;
+
+}
+
+
+
+.active {
+  color: var(--secondary-color);
+
+}
+
+.social_word {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 18px;
+  font-weight: 100;
+  
+
+
+
+}
+
+.post__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  margin: auto;
+  width: 80%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  color: black;
+
+}
+
+@media (max-width: 600px) {
+  .social_word {
+    display: none;
+  }
+
+  .row_2 {
+    width: 100%;
+  }
+  
+  
 }
