@@ -23,7 +23,6 @@
 
   height: auto;
   border-bottom: var(--primary-color) 3px solid;
-  
 }
 
 .social_media {
@@ -117,28 +116,24 @@
   margin: auto;
   font-weight: 300;
   color: black !important;
-
 }
 
 .row_4 {
   display: flex;
   flex-direction: row;
-  
+
   align-items: center;
   color: black;
   flex-wrap: wrap;
-  
-  width: 50%;
 
+  width: 50%;
 }
 
 .post-container input[type='checkbox'],
 .row_1 input[type='checkbox'],
 .row_2 input[type='checkbox'] {
-
   height: 15px;
   width: 15px;
-
 
   accent-color: dodgerblue;
 }
@@ -188,6 +183,18 @@
   font-size: 18px;
 }
 
+.post__container textarea {
+  color: navy;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 3px auto;
+  width: 90%;
+  max-width: 450px;
+  font-size: 18px;
+  background-color: white;
+  height: 500px;
+}
+
 .post-container input[type='text']:focus {
   border: 1px solid var(--secondary-color);
 }
@@ -198,7 +205,7 @@
   font-weight: 300;
   font-size: 45px;
   display: flex;
-width: 80%;
+  width: 80%;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -215,24 +222,16 @@ width: 80%;
   align-items: center;
   flex-direction: row;
   color: black;
-
 }
-
-
 
 .active {
   color: var(--secondary-color);
-
 }
 
 .social_word {
   font-family: 'Cinzel Decorative', cursive;
   font-size: 18px;
   font-weight: 100;
-  
-
-
-
 }
 
 .post__container {
@@ -248,7 +247,6 @@ width: 80%;
   border-radius: 15px;
   margin-bottom: 10px;
   color: black;
-
 }
 
 @media (max-width: 600px) {
@@ -259,6 +257,4 @@ width: 80%;
   .row_2 {
     width: 100%;
   }
-  
-  
 }

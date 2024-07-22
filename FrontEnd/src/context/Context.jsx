@@ -38,16 +38,8 @@ const ContextProvider = (props) => {
     }
 
     let responseArray = response.split('**');
-    let newResponse = '';
-    for (let i = 0; i < responseArray.length; i++) {
-      if (i === 0 || i % 2 !== 1) {
-        newResponse += responseArray[i];
-      } else {
-        newResponse += '<br />' + '<b>' + responseArray[i] + '</b>';
-      }
-    }
-    let newResponse2 = newResponse.split('*').join('<br></br>');
-    let newResponseArray = newResponse2.split(' ');
+    let newResponse = responseArray.join('');
+    let newResponseArray = newResponse.split(' ');
     for (let i = 0; i < newResponseArray.length; i++) {
       const nextWord = newResponseArray[i];
       delayPara(i, nextWord + ' ');
