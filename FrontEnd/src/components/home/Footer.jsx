@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import geminiLogo from '../../assets/images/geminiBase.png';
+import geminiLogo from '../../assets/images/geminiBase2.png';
 
 const Footer = () => {
   return (

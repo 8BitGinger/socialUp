@@ -1,50 +1,96 @@
-import React, {useState} from 'react'
-import '../assets/css/contact.css'
+import { React, useRef } from 'react';
+import '../assets/css/contact.css';
 
-import devIcon from '../assets/images/devIcon.png'
+import { useForm, ValidationError } from '@formspree/react';
+
+import contactMe from '../assets/images/devIcon.png';
 
 const Contact = () => {
-    const [form, setForm] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+  const [state, handleSubmit, reset] = useForm('mjvnrreq');
 
-    const handleFormChange = (e) => {
-        const {name, value} = e.target;
-        setForm({
-            ...form,
-            [name]: value
-        });
-        console.log(form)
+  if (state.succeeded) {
+    window.location.reload();
+    return <p className="pop-up">Thanks for reaching out!</p>;
+  } else {
+    if (state.errors) {
+      console.log(state.errors);
+      return <p className="pop-up">There was an error. Please try again.</p>;
     }
-
-    const sendForm = (e) => {
-        e.preventDefault();
-        console.log('Form submitted');
-        console.log(form)
-    }
+  }
 
   return (
-    <section className='contact_container'>
-        <h1>Contact the Developer</h1>
-        <div className="dev">
-            <img src={devIcon} alt="Developer" />
-            <p>Hi, I am <a href="https://ryanfann.netlify.app/">Ryan</a> the 8-Bit Ginger, a MERN Stack developer based in the United States.</p>
-           
-        </div>
-       
-        <form className='contact_form'>
-          <label htmlFor='name'>Name:</label>
-          <input type='text' id='name' name='name' required onChange={handleFormChange}/>
-          <label htmlFor='email'>Email:</label>
-          <input type='email' id='email' name='email' required onChange={handleFormChange}/>
-          <label htmlFor='message'>Message:</label>
-          <textarea id='message' name='message' required onChange={handleFormChange}></textarea>
-          <button type='submit' className='btn btn_submit' onClick={sendForm}>Submit</button>
-        </form>
-    </section>
-  )
-}
+    <>
+      <section id="contact" className="page_container">
+        <div className="contact_container">
+          <div>
+            <div>
+              <h2>Contact Me.</h2>
 
-export default Contact
+              <div className="top_section">
+                <img
+                  className=" w-64  hidden avatar2 lg:flex flex-1 max-w-[220px] lg:max-w-[262px] mx-auto"
+                  src={contactMe}
+                  alt="screenshot"
+                />
+                <p>
+                  I am currently looking to launch a career in Web Development.
+                  If you have any questions or would like to contact me, please
+                  fill out the form below and I will get back to you as soon as
+                  possible.
+                </p>
+              </div>
+              <form id="contact-form" onSubmit={handleSubmit}>
+                <input
+                  type="name"
+                  placeholder="Your Name"
+                  name="name"
+                  id="name"
+                  required={true}
+                />
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  name="email"
+                  id="email"
+                  required={true}
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
+                <textarea
+                  placeholder="Your Message"
+                  name="message"
+                  id="message"
+                  required={true}
+                />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
+
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  onClick={reset}
+                  className="btn btn_submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Contact;
