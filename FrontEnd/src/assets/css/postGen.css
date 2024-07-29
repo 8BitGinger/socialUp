@@ -9,7 +9,7 @@
   text-align: center;
   font-size: calc(18px + 1.5vmin);
 
-  background-color: var(--container-color);
+  background: var(--primary-gradient);
   box-shadow: var(--container-shadow);
 
   border-radius: 15px;

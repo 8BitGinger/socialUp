@@ -4,10 +4,15 @@ import '../assets/css/about.css';
 import geminiLogo from '../assets/images/geminiBase2.png';
 
 const About = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       <section className="about">
-        <img src={banner} alt="AI Created Social Media Banner" />
+        <img
+          src={banner}
+          alt="AI Created Image with text stating What is Social UP?"
+          loading="lazy"
+        />
 
         <p>
           <span className="primary">SocialUP↑</span>

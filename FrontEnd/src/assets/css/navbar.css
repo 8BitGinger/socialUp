@@ -1,6 +1,6 @@
 .navbar {
   border-bottom: 3px double var(--accent-color);
-  background-color: var(--primary-color);
+  background: var(--primary-gradient);
   margin: auto;
   display: flex;
   flex-direction: row;

@@ -1,15 +1,20 @@
 import { React, useRef } from 'react';
 import '../assets/css/contact.css';
+import { Link } from 'react-router-dom';
+import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import { useForm, ValidationError } from '@formspree/react';
 
-import contactMe from '../assets/images/devIcon.png';
+import contactMe from '../assets/images/8bitv1.png';
 
 const Contact = () => {
+  window.scrollTo(0, 0);
   const [state, handleSubmit, reset] = useForm('mjvnrreq');
 
   if (state.succeeded) {
-    window.location.reload();
+    setTimeout(() => {
+      window.location.replace('/');
+    }, 5000);
     return <p className="pop-up">Thanks for reaching out!</p>;
   } else {
     if (state.errors) {
@@ -23,17 +28,12 @@ const Contact = () => {
       <section id="contact" className="page_container">
         <div className="contact_container">
           <div>
-            <div>
+            <div className="max-width">
               <h2>Contact Me.</h2>
 
               <div className="top_section">
-                <img
-                  className=" w-64  hidden avatar2 lg:flex flex-1 max-w-[220px] lg:max-w-[262px] mx-auto"
-                  src={contactMe}
-                  alt="screenshot"
-                />
+                <img src={contactMe} alt="8 Bit Ginger Icon" />
                 <p>
-                  I am currently looking to launch a career in Web Development.
                   If you have any questions or would like to contact me, please
                   fill out the form below and I will get back to you as soon as
                   possible.
@@ -89,6 +89,18 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <div className="social-strip">
+        <Link to="https://github.com/8BitGinger" target="_blank">
+          <FaGithub />
+        </Link>
+
+        <Link to="https://twitter.com/the8bitginger" target="_blank">
+          <FaTwitter />
+        </Link>
+        <Link to="https://www.linkedin.com/in/ryanfanntastic/" target="_blank">
+          <FaLinkedin />
+        </Link>
+      </div>
     </>
   );
 };

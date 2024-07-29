@@ -9,6 +9,7 @@ import {
 
 const MODEL_NAME = 'gemini-1.0-pro';
 const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+
 console.log(API_KEY);
 
 async function runChat(prompt) {

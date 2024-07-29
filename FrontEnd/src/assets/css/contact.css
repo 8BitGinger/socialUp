@@ -1,7 +1,7 @@
 .contact_container {
   padding: 10px;
-  color: var(--text-color);
-  background-color: var(--container-color);
+  color: white;
+  background: var(--primary-gradient);
   border-radius: 15px;
   border: 3px solid var(--primary-color);
   box-shadow: var(--container-shadow);
@@ -63,6 +63,54 @@
   margin: 5px auto;
 }
 
+.contact_container input:focus,
+.contact_container textarea:focus {
+  border: 2px solid var(--container-color) !important;
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--container-color);
+  color: var(--text-color);
+  border-radius: 15px;
+  border: 3px solid var(--primary-color);
+  box-shadow: var(--container-shadow);
+  width: 75%;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+
+.max-width {
+  max-width: 400px;
+  margin: auto;
+}
+
+.social-strip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.social-strip a {
+  margin: 0 10px;
+  font-size: 2.5rem;
+  color: dodgerblue;
+}
+
+.social-strip a:hover {
+  color: var(--primary-color);
+  scale: 1.1;
+}
+
 .contact_container label {
   width: 100%;
   text-align: center;
@@ -84,10 +132,11 @@
 }
 
 .top_section img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
   margin-right: 10px;
+  animation: pulse 2s infinite;
 }
 
 @media (max-width: 768px) {
@@ -97,5 +146,9 @@
   }
   .top_section p {
     font-size: 0.8rem;
+  }
+
+  .social-strip a {
+    font-size: 2rem;
   }
 }

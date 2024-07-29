@@ -39,7 +39,7 @@ Start by:
 
 Your content will be upscaled using Gemini's API and then returned below for you to copy and paste as needed.
 
-Post not quite right? Start over or just click Start Over! ☹
+Post not quite right? ☹ Just click Start Over!
 
 > Being a Social Media Icon has never been easier, with SocialUp↑
 
@@ -49,7 +49,7 @@ Post not quite right? Start over or just click Start Over! ☹
 
 - Gemini API
 - React
-- Firebase
+- FormSpree
 
 <a id="license"></a>
 
