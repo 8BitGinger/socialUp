@@ -35,8 +35,8 @@
 }
 
 .top_section p {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: black;
   text-align: left;
 }
@@ -123,8 +123,13 @@
 }
 
 .social-strip a:hover {
-  color: var(--primary-color);
+  color: rgb(248, 161, 12);
   scale: 1.1;
+}
+
+.social-strip a:active {
+  color: rgb(248, 161, 12);
+  scale: 0.9;
 }
 
 .overlay-contact {
@@ -159,11 +164,11 @@
 }
 
 .top_section img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 10px;
   margin-right: 5px;
-  animation: shake 10s infinite ease-in-out;
+  animation: float 5s infinite ease-in-out;
 }
 
 @media (max-width: 768px) {

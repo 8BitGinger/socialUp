@@ -17,7 +17,7 @@
 
 .about {
   width: 80%;
-  max-width: 800px;
+  max-width: 1000px;
   padding: 15px;
   margin: 10px auto;
   display: flex;
@@ -37,8 +37,8 @@
   height: auto;
 
   margin: auto;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   box-shadow: var(--container-shadow);
 }
 
@@ -56,13 +56,14 @@
   border-top: orange double 3px;
   border-bottom: orange double 3px;
   box-shadow: var(--container-shadow);
+  border-radius: 8px;
 }
 
 .about2 img {
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   height: auto;
-  max-height: 250px;
+  max-height: 200px;
   margin: auto;
   animation: pulse 2s infinite ease-in;
 }

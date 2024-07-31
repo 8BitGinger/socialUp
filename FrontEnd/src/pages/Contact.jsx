@@ -5,7 +5,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import { useForm, ValidationError } from '@formspree/react';
 
-import contactMe from '../assets/images/8bitv1.png';
+import arrowUp from '../assets/images/arrowUp.png';
 
 const Contact = () => {
   window.scrollTo(0, 0);
@@ -29,10 +29,9 @@ const Contact = () => {
         <div className="contact_container">
           <div className="overlay-contact">
             <div className="max-width">
-              <h2>Contact Ryan</h2>
-              <h3>The 8BitGinger</h3>
+              <h2>Contact Me.</h2>
               <div className="top_section">
-                <img src={contactMe} alt="8 Bit Ginger Icon" />
+                <img src={arrowUp} alt="Social Up Arrow" />
                 <p>
                   Want to connect? Fill out our contact form below. We&apos;ll
                   get back to you promptly.

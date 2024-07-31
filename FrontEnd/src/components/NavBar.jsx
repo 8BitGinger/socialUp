@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { RiHomeHeartFill } from 'react-icons/ri';
-import { BsEnvelopeAtFill } from "react-icons/bs";
+import { BsEnvelopeAtFill } from 'react-icons/bs';
 
 import { RiQuestionnaireFill } from 'react-icons/ri';
+
 // import { FaUserAstronaut } from 'react-icons/fa';
 
 // import { GrLogin } from 'react-icons/gr';
@@ -21,9 +22,7 @@ const NavBar = () => {
         <RiQuestionnaireFill />
       </Link>
       <Link to="/contact" className="navbar__link">
-      <BsEnvelopeAtFill />
-
-
+        <BsEnvelopeAtFill />
       </Link>
       {/* <Link to="/login" className="navbar__link">
         <GrLogin />
