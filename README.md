@@ -2,7 +2,7 @@
 
 ### _Upscale your Social Media content with AI!_
 
-![logo](./FrontEnd/src/assets/images/socialLogoRM.jpg)
+![logo](./FrontEnd/src/assets/images/readme-pics/socialLogoRM.jpg)
 
 ## Description
 
@@ -40,7 +40,7 @@ Start by:
 
 Your content will be upscaled using Gemini's API and then returned below for you to copy and paste as needed.
 
-Post not quite right? ☹ Just click Start Over!
+Post not quite right? ☹ Just click Reload!
 
 > Being a Social Media Icon has never been easier, with SocialUp↑
 
@@ -68,7 +68,27 @@ Post not quite right? ☹ Just click Start Over!
 
 ## Screenshot
 
-![screenshot](./FrontEnd/src/assets/images/placeholder.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot1.png)
+
+<details closed>
+<summary>See More Screenshots Here!</summary>
+<br>
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot2.png)
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot3.png)
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot4.png)
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot5.png)
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot6.png)
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot7.png)
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot8.png)
+
+</details>
 
 <a id="links"></a>
 
@@ -97,7 +117,5 @@ ryan.fann@gmail.com
 #### GitHub Username:
 
 [8BitGinger](https://github.com/8BitGinger)
-
-![screenshot](./FrontEnd/src/assets/images/ai-readme.png)
 
 </div>

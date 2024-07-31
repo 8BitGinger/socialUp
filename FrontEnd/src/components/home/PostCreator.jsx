@@ -18,9 +18,9 @@ import LayoutRow from './LayoutRow';
 // import helpers
 
 // import icons
-import { FaFacebookF, FaInstagram } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
-import { FaLinkedinIn } from 'react-icons/fa6';
+import { FaCopy, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
+import { IoReload } from 'react-icons/io5';
 
 //function to handle form submission
 
@@ -398,7 +398,7 @@ Post: (post text for selected platform here)
             >
               <div className="post_text">
                 <textarea
-                  placeholder="Your Post Here"
+                  placeholder="What do you want to say?"
                   onChange={handleContent}
                 />
                 <button className="btn btn__add" onClick={addCustomContent}>
@@ -419,7 +419,7 @@ Post: (post text for selected platform here)
           <div className="post__container">
             {!loading ? (
               <>
-                <div className="social__row">
+                <div className="social__nameplate">
                   <img src={userIcon} alt="User Icon" />
                   <div className="name__date">
                     <h3>Social Up User</h3>
@@ -432,13 +432,17 @@ Post: (post text for selected platform here)
             )}
             <textarea defaultValue={resultsData}></textarea>
             {!loading ? (
-              <div className="split">
-                <button className="btn__new btn" onClick={copyText}>
-                  Copy Text
+              <div className="split2">
+                <button className="btn__icon btn" onClick={copyText}>
+                  <div className="icon">
+                    <FaCopy />{' '}
+                  </div>
                 </button>
 
-                <button className="btn btn__new" onClick={loadPage}>
-                  Start Over?
+                <button className="btn__icon btn" onClick={loadPage}>
+                  <div className="icon">
+                    <IoReload />{' '}
+                  </div>
                 </button>
               </div>
             ) : null}

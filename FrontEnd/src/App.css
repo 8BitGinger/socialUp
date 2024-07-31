@@ -13,8 +13,8 @@
   --btn-shadow: 0 0 5px 3px rgba(109, 107, 107, 0.473);
   --primary-gradient: linear-gradient(
     90deg,
-    rgb(231, 213, 181) 0%,
-    #5cd7f2 100%
+    rgb(236, 225, 207) 0%,
+    #7ad8ed 100%
   );
   font-family: 'Cinzel', serif;
 }
@@ -44,7 +44,7 @@ main {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background: url(./assets/images/socialHeader2.jpg) no-repeat center
+  background: url(./assets/images/socialHeader3.jpg) no-repeat center
     center/cover;
   margin-top: 50px;
   position: relative;
