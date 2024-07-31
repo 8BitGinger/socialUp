@@ -3,7 +3,7 @@ const LayoutRow = (props) => {
   return (
     <div className="sections">
       <img src={image} alt={imageAlt} loading="lazy" />
-      <label htmlFor={name}>{title}</label>
+      <h1>{title}</h1>
       <div className="row_1">{children}</div>
     </div>
   );

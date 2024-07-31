@@ -13,8 +13,9 @@ SocialUp↑ uses the Google's amazing AI Gemini to upscale your Social Media Con
 1. [Instructions](#instructions)
 1. [Technologies](#technologies)
 1. [Screenshot](#screenshot)
+1. [Roadmap](#roadmap)
 1. [License](#license)
-1. [Contributing](#contributing)
+1. [Credits](#credits)
 1. [Links](#links)
 1. [Contact](#contact)
 
@@ -42,6 +43,8 @@ Your content will be upscaled using Gemini's API and then returned below for you
 
 Post not quite right? ☹ Edit the text in the Text Area or Just click Reload!
 
+[YouTube Walkthrough Video](www.youtube.com)
+
 > Being a Social Media Icon has never been easier, with SocialUp↑
 
 <a id="technologies"></a>
@@ -51,6 +54,19 @@ Post not quite right? ☹ Edit the text in the Text Area or Just click Reload!
 - Gemini API
 - React
 - FormSpree
+- Google Fonts
+
+```
+  "dependencies": {
+    "@formspree/react": "^2.5.1",
+    "@google/generative-ai": "^0.14.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.23.1",
+    "underscore": "^1.13.6"
+  },
+```
 
 <a id="license"></a>
 
@@ -58,11 +74,16 @@ Post not quite right? ☹ Edit the text in the Text Area or Just click Reload!
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<a id="contributing"></a>
+<a id="credits"></a>
 
-## Contributing
+## Credits
 
 [Google Gemini](https://gemini.google.com/app)
+
+Used code from this tutorial/my gemini clone:
+
+[GreatStack YouTube](https://www.youtube.com/watch?v=0yboGn8errU)
+[My Gemini Clone](https://gemini-ryan.netlify.app/)
 
 <a id="screenshot"></a>
 
@@ -93,6 +114,18 @@ Post not quite right? ☹ Edit the text in the Text Area or Just click Reload!
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot10.png)
 
 </details>
+
+<a id="roadmap"></a>
+
+## Roadmap
+
+Future Development Plans:
+
+- Implement a user login utilizing Firebase
+  -- Firebase
+- Return individual results containers based on Platform
+- Create auto-post to Platform feature instead of Copy/Paste
+- Convert to React Native for iOS/Android Apps
 
 <a id="links"></a>
 

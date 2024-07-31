@@ -7,7 +7,7 @@
   box-shadow: var(--container-shadow);
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 80%;
   max-width: 500px;
   margin: auto;
 }
@@ -34,9 +34,10 @@
   align-items: center;
 }
 
-.contact_container p {
-  font-size: 1rem;
+.top_section p {
+  font-size: 1.3rem;
   font-weight: 600;
+  color: black;
   text-align: left;
 }
 
@@ -44,6 +45,21 @@
   display: flex;
   flex-direction: column;
   margin: 10px;
+}
+
+.contact_container h2 {
+  font-size: 2rem;
+  margin: 0px auto;
+  margin-left: -15px;
+}
+
+.contact_container h3 {
+  font-size: 1.3rem;
+  font-style: italic;
+  opacity: 0.8;
+
+  margin: 0px auto;
+  margin-left: 15px;
 }
 
 .top_section {
@@ -93,7 +109,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10px;
+  margin: 0px auto;
   width: 100%;
   align-items: center;
   position: fixed;
@@ -102,13 +118,24 @@
 
 .social-strip a {
   margin: 0 10px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: dodgerblue;
 }
 
 .social-strip a:hover {
   color: var(--primary-color);
   scale: 1.1;
+}
+
+.overlay-contact {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(208, 238, 239, 0.8) 100%
+  );
+  border-radius: 5px;
 }
 
 .contact_container label {
@@ -132,10 +159,10 @@
 }
 
 .top_section img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
   animation: shake 10s infinite ease-in-out;
 }
 
@@ -145,10 +172,21 @@
     height: 80px;
   }
   .top_section p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    color: black;
+  }
+
+  .contact_container h2 {
+    font-size: 1.5rem;
+    margin-left: 5px;
+  }
+
+  .contact_container h3 {
+    font-size: 1rem;
+    margin-left: 5px;
   }
 
   .social-strip a {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }

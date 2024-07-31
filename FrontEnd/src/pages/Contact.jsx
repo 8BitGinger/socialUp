@@ -27,16 +27,15 @@ const Contact = () => {
     <>
       <section id="contact" className="page_container">
         <div className="contact_container">
-          <div>
+          <div className="overlay-contact">
             <div className="max-width">
-              <h2>Contact Me.</h2>
-
+              <h2>Contact Ryan</h2>
+              <h3>The 8BitGinger</h3>
               <div className="top_section">
                 <img src={contactMe} alt="8 Bit Ginger Icon" />
                 <p>
-                  If you have any questions or would like to contact me, please
-                  fill out the form below and I will get back to you as soon as
-                  possible.
+                  Want to connect? Fill out our contact form below. We&apos;ll
+                  get back to you promptly.
                 </p>
               </div>
               <form id="contact-form" onSubmit={handleSubmit}>

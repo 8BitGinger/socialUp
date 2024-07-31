@@ -14,7 +14,7 @@
   --primary-gradient: linear-gradient(
     90deg,
     rgb(236, 225, 207) 0%,
-    #7ad8ed 100%
+    dodgerblue 100%
   );
   font-family: 'Cinzel', serif;
 }
@@ -22,6 +22,10 @@
 main {
   margin: 0;
   padding: 0;
+}
+
+.sections label {
+  font-weight: 700 !important;
 }
 
 .pageContainer {
@@ -35,7 +39,7 @@ main {
 }
 
 .header {
-  min-height: 500px;
+  max-height: 500px;
   width: 100%;
   padding: 0;
   margin: auto;
@@ -50,6 +54,18 @@ main {
   position: relative;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  box-shadow: var(--container-shadow);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(208, 238, 239, 0.8) 100%
+  );
+  border-radius: 5px;
 }
 
 .header h1 {
@@ -59,6 +75,7 @@ main {
 
 .header img {
   width: 100%;
+
   margin-top: 20px;
 }
 
@@ -136,6 +153,14 @@ main {
   background-color: rgb(23, 113, 202);
 
   scale: 0.9;
+}
+
+.sections h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  margin: 0px auto;
 }
 
 @keyframes spin {

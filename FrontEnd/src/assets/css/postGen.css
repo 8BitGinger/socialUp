@@ -16,7 +16,7 @@
   margin-bottom: 60px;
   margin-top: 40px;
   overflow: hidden;
-  border: 1px dotted dodgerblue;
+  border: 2px solid dodgerblue;
 }
 
 .generator__container img {
@@ -24,7 +24,7 @@
   box-shadow: var(--btn-shadow);
 
   height: auto;
-  border-bottom: var(--primary-color) 3px solid;
+  border-bottom: var(--primary-color) 2px solid;
 }
 
 .social_media {
@@ -33,7 +33,7 @@
 
 .post-container,
 .post__container {
-  padding: 10px 0;
+  padding: 0;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@
   font-family: 'Cinzel Decorative', cursive;
   margin: 10px 0;
   margin-bottom: 3px;
-  font-size: 18px;
+  font-size: 22px;
   text-wrap: wrap;
 }
 
@@ -187,6 +187,7 @@
   color: black;
   flex-wrap: wrap;
   padding: 5px auto;
+  font-size: 22px;
 }
 
 .row_2 {
@@ -294,7 +295,6 @@
 .row_4 label {
   font-family: 'Cinzel Decorative', cursive;
   margin: auto;
-  font-weight: 300;
   font-size: 45px;
   display: flex;
   width: 80%;
@@ -307,7 +307,6 @@
 .row_2 label {
   font-family: 'Cinzel Decorative', cursive;
   margin: auto;
-  font-weight: 300;
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -356,6 +355,33 @@ textarea::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
+.loader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loader hr {
+  border-radius: 15px;
+  border: 1px dotted white;
+  background-color: #fdfdfd;
+  background: linear-gradient(to right, #3eaefd, #f5b630, #39a2ee);
+  background-size: 1600px 50px;
+  height: 20px;
+  width: 100%;
+  animation: loader 2s infinite linear;
+}
+
+@keyframes loader {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: 800px 0;
+  }
+}
+
 @media (max-width: 600px) {
   .social_word {
     display: none;
@@ -363,5 +389,9 @@ textarea::-webkit-scrollbar-thumb {
 
   .row_2 {
     width: 100%;
+  }
+
+  .post-container h1 {
+    font-size: 1.3rem;
   }
 }
