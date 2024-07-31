@@ -436,7 +436,10 @@ Post: (post text for selected platform here)
                   </div>
                 </>
               )}
-              <textarea defaultValue={resultsData}></textarea>
+              <textarea
+                defaultValue={resultsData}
+                readOnly={loading ? true : false}
+              ></textarea>
               {!loading ? (
                 <div className="split2">
                   <button className="btn__icon btn" onClick={copyText}>

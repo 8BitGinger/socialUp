@@ -13,7 +13,7 @@ const About = () => {
           alt="AI Created Image with text stating What is Social UP?"
         />
         <p>
-          <span className="primary">SocialUP↑</span>
+          <span className="primary">SocialUp↑</span>
           <br></br>
           automatically formats your post to have the same content work for
           multiple social media sites. Don&apos;t worry about the character
@@ -48,14 +48,37 @@ const About = () => {
       </section>
 
       <section className="about">
+        <h2>Instructions:</h2>
+        <ul>
+          Start by:
+          <li>1. Select what Platforms you would like to share your Content</li>
+          <li>2. Choose the Tone you would like to set for your Content</li>
+          <li>3. Identify your Target Audience</li>
+          <li> 4. Enter what you would like to say </li>
+          <li>5. Click Add Content </li>
+          <li>
+            6. Click Generate Upscaled Post Your content will be upscaled using
+            Gemini&apos;s API and then returned below for you to copy and paste
+            as needed.
+          </li>{' '}
+          <br></br>
+          <li className="italic">
+            {' '}
+            Post not quite right? ☹ Edit the text in the Text Area or Just
+            click Reload!
+          </li>
+        </ul>
+      </section>
+
+      <section className="about2">
         <h2>
           Powered by <a href="https://gemini.google.com/app">Gemini</a>
         </h2>
         <p>
           Gemini is the backbone of SocialUP↑ and is the reason that it can do
           all the amazing things that it can.{' '}
-          <span className="primary2">
-            Submitted to the Gemini API Developer Competition, SocialUP↑
+          <span className="italic">
+            Submitted to the Gemini API Developer Competition as SocialUp↑
           </span>
         </p>
       </section>

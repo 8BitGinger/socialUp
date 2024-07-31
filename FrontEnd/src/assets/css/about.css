@@ -68,6 +68,17 @@
   animation: pulse 2s infinite ease-in;
 }
 
+.italic {
+  font-style: italic;
+  scale: 0.9;
+}
+
+.about2 a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .about2 h2 {
   color: rgb(65, 63, 63);
   font-family: 'Cinzel Decorative', cursive;
@@ -76,16 +87,22 @@
   margin-top: 20px;
 }
 
-.about p {
+.about p,
+.about2 p {
   margin: 20px auto;
   width: 85%;
   padding: 10px;
   border-radius: 5px;
 }
 
-.about2 ul {
+.about2 ul,
+.about ul {
   list-style-type: none;
   margin-left: -35px;
+}
+
+.about ul {
+  text-align: left;
 }
 
 @keyframes pulse {
