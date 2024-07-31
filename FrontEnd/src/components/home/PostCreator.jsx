@@ -1,5 +1,5 @@
 // Standard Imports
-import { useContext, useState } from 'react';
+import { useContext, useMemo, useState } from 'react';
 
 import { Context } from '../../context/Context';
 import '../../assets/css/postGen.css';
@@ -116,6 +116,10 @@ const PostCreator = () => {
   const loadPage = () => {
     window.location.reload();
     window.location.top();
+  };
+
+  const forceUpdate = (e) => {
+    this.forceUpdate();
   };
 
   const handleSubmit = (e) => {
@@ -418,24 +422,26 @@ Post: (post text for selected platform here)
                 <div className="social__row">
                   <img src={userIcon} alt="User Icon" />
                   <div className="name__date">
-                    <h3>Username</h3>
-                    <p>Now</p>
+                    <h3>Social Up User</h3>
+                    <p>Right Now</p>
                   </div>
-                </div>
-                <textarea defaultValue={resultsData}>{resultsData}</textarea>
-                <div className="split">
-                  <button className="btn__new btn" onClick={copyText}>
-                    Copy Text
-                  </button>
-
-                  <button className="btn btn__new" onClick={loadPage}>
-                    Start Over?
-                  </button>
                 </div>
               </>
             ) : (
               <h2>loading... please wait</h2>
             )}
+            <textarea defaultValue={resultsData}></textarea>
+            {!loading ? (
+              <div className="split">
+                <button className="btn__new btn" onClick={copyText}>
+                  Copy Text
+                </button>
+
+                <button className="btn btn__new" onClick={loadPage}>
+                  Start Over?
+                </button>
+              </div>
+            ) : null}
           </div>
         )}
       </section>
