@@ -11,7 +11,6 @@ const About = () => {
         <img
           src={banner}
           alt="AI Created Image with text stating What is Social UP?"
-          loading="lazy"
         />
         <p>
           <span className="primary">SocialUP↑</span>

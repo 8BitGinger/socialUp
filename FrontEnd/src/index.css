@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --background-main: linear-gradient(-65deg, #f78d3b, #0382f8, #f78d3b);
 }
 
 body {
@@ -29,7 +28,6 @@ body::-webkit-scrollbar-thumb:hover {
   background: #ca1717;
 }
 
-
 @keyframes bg-animation {
   0% {
     background-position: left;
@@ -51,5 +49,41 @@ body::-webkit-scrollbar-thumb:hover {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

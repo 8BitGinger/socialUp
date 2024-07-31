@@ -44,7 +44,7 @@ main {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background: url(./assets/images/socialHeader.jpg) no-repeat center
+  background: url(./assets/images/socialHeader2.jpg) no-repeat center
     center/cover;
   margin-top: 50px;
   position: relative;
@@ -129,7 +129,7 @@ main {
 }
 
 .btn:hover {
-  background-color: rgb(205, 162, 62);
+  background-color: dodgerblue;
 }
 
 .btn:active {
