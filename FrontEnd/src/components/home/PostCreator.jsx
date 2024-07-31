@@ -422,7 +422,7 @@ Post: (post text for selected platform here)
                     <p>Now</p>
                   </div>
                 </div>
-                <textarea defaultValue={resultsData}></textarea>
+                <textarea defaultValue={resultsData}>{resultsData}</textarea>
                 <div className="split">
                   <button className="btn__new btn" onClick={copyText}>
                     Copy Text
