@@ -1,6 +1,6 @@
 .navbar {
   border-bottom: 3px double var(--accent-color);
-  background: var(--primary-gradient);
+  background: dodgerblue;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -19,7 +19,7 @@
 
 .navbar__link {
   text-decoration: none;
-  color: var(--tertiary-color);
+  color: white;
   margin: auto;
   font-size: 35px;
   margin-top: 5px;

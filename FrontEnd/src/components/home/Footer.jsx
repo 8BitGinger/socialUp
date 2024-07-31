@@ -7,7 +7,11 @@ const Footer = () => {
       <img src={geminiLogo} alt="Gemini Inspired Logo" />
 
       <Link to="https://gemini.google.com">
-        <h1>Powered by Gemini</h1>
+        <h1>
+          <a href="https://gemini.google.com/app" target="_blank">
+            Powered by Gemini
+          </a>
+        </h1>
       </Link>
     </section>
   );

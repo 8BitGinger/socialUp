@@ -10,6 +10,7 @@ import mediaIconsLogo from '../../assets/images/mediaIconsLogos.jpg';
 import toneIcons from '../../assets/images/toneIcons.jpg';
 import audienceIcons from '../../assets/images/audienceIcons.jpg';
 import postIcons from '../../assets/images/postIcons.jpg';
+import userIcon from '../../assets/images/userIcon.png';
 
 // import components
 import LayoutRow from './LayoutRow';
@@ -94,6 +95,12 @@ const PostCreator = () => {
       [name]: newValue,
     });
     console.log(post);
+  };
+
+  const copyText = () => {
+    const text = document.querySelector('textarea');
+    text.select();
+    document.execCommand('copy');
   };
 
   const addCustomContent = (e) => {
@@ -406,12 +413,26 @@ Post: (post text for selected platform here)
           </form>
         ) : (
           <div className="post__container">
-            <textarea defaultValue={resultsData}></textarea>
-
             {!loading ? (
-              <button className="btn btn__new" onClick={loadPage}>
-                Start Over?
-              </button>
+              <>
+                <div className="social__row">
+                  <img src={userIcon} alt="User Icon" />
+                  <div className="name__date">
+                    <h3>Username</h3>
+                    <p>Now</p>
+                  </div>
+                </div>
+                <textarea defaultValue={resultsData}></textarea>
+                <div className="split">
+                  <button className="btn__new btn" onClick={copyText}>
+                    Copy Text
+                  </button>
+
+                  <button className="btn btn__new" onClick={loadPage}>
+                    Start Over?
+                  </button>
+                </div>
+              </>
             ) : (
               <h2>loading... please wait</h2>
             )}

@@ -13,7 +13,6 @@ const About = () => {
           alt="AI Created Image with text stating What is Social UP?"
           loading="lazy"
         />
-
         <p>
           <span className="primary">SocialUP↑</span>
           <br></br>
@@ -50,7 +49,9 @@ const About = () => {
       </section>
 
       <section className="about">
-        <h2>Powered by Gemini</h2>
+        <h2>
+          Powered by <a href="https://gemini.google.com/app">Gemini</a>
+        </h2>
         <p>
           Gemini is the backbone of SocialUP↑ and is the reason that it can do
           all the amazing things that it can.{' '}

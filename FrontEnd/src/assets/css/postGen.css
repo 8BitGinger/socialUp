@@ -14,7 +14,9 @@
 
   border-radius: 15px;
   margin-bottom: 60px;
+  margin-top: 40px;
   overflow: hidden;
+  border: 1px dotted dodgerblue;
 }
 
 .generator__container img {
@@ -55,7 +57,8 @@
   text-wrap: wrap;
 }
 
-.post-container textarea {
+.post-container textarea,
+.post__container textarea {
   width: 90%;
   max-width: 600px;
   height: 100px;
@@ -66,6 +69,51 @@
   font-size: 20px;
   font-family: 'Cinzel;', serif;
   text-align: center;
+}
+
+.post__container textarea {
+  height: fit-content;
+  max-height: 180px;
+  border-radius: 20px !important;
+}
+
+.social__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 100%;
+  padding: 5px auto;
+}
+
+.social__row img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+.name__date {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name__date h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 24px;
+  margin: 0;
+}
+
+.name__date p {
+  font-family: 'Cinzel' serif;
+  font-size: 16px;
+  margin: 0;
 }
 
 .post_text {
@@ -247,6 +295,21 @@
   border-radius: 15px;
   margin-bottom: 10px;
   color: black;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.3em;
+  border-radius: 20px;
+}
+
+textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: dodgerblue;
+  outline: none;
+  border-radius: 20px;
 }
 
 @media (max-width: 600px) {

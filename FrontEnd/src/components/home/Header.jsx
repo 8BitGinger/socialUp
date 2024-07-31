@@ -1,12 +1,14 @@
-import hero from '../../assets/images/socialLogoColor.jpg';
+import socialUpLogo from '../../assets/images/socialUpLogoNoBack2.png';
 
 const Header = () => {
   return (
-    <section className="header" >
+    <section className="header">
       <div>
-        <h3 className="floating">
-        Elevate your Social Media Game!
-        </h3>
+        <img
+          className="floating"
+          src={socialUpLogo}
+          alt="Floating Social Up Logo"
+        />
       </div>
     </section>
   );

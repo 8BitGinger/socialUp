@@ -11,6 +11,25 @@ body {
   background-color: #f8f8f8;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border: 1px solid #242424;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: dodgerblue;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #ca1717;
+}
+
+
 @keyframes bg-animation {
   0% {
     background-position: left;
@@ -20,5 +39,17 @@ body {
   }
   100% {
     background-position: left;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
