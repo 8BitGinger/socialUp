@@ -40,7 +40,7 @@ Start by:
 
 Your content will be upscaled using Gemini's API and then returned below for you to copy and paste as needed.
 
-Post not quite right? ☹ Just click Reload!
+Post not quite right? ☹ Edit the text in the Text Area or Just click Reload!
 
 > Being a Social Media Icon has never been easier, with SocialUp↑
 
@@ -68,7 +68,7 @@ Post not quite right? ☹ Just click Reload!
 
 ## Screenshot
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot1.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/computer-layout-template.png)
 
 <details closed>
 <summary>See More Screenshots Here!</summary>
@@ -88,15 +88,19 @@ Post not quite right? ☹ Just click Reload!
 
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot8.png)
 
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot9.png)
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot10.png)
+
 </details>
 
 <a id="links"></a>
 
 ## Links
 
-### [Repo Link](delete)
+### [Repo Link](https://github.com/8BitGinger/socialUp)
 
-### [Deployed Link](delete)
+### [Deployed Link](https://social-up.vercel.app/)
 
 <div align="center">
 
