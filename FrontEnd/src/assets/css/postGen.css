@@ -72,8 +72,6 @@
 }
 
 .post__container textarea {
-  height: fit-content;
-  max-height: 180px;
   border-radius: 20px !important;
 }
 

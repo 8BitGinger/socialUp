@@ -2,7 +2,7 @@
 
 ### _Upscale your Social Media content with AI!_
 
-![logo](./FrontEnd/src/assets/images/socialLogoColor.jpg)
+![logo](./FrontEnd/src/assets/images/socialLogoRM.jpg)
 
 ## Description
 
@@ -15,7 +15,6 @@ SocialUp↑ uses the Google's amazing AI Gemini to upscale your Social Media Con
 1. [Screenshot](#screenshot)
 1. [License](#license)
 1. [Contributing](#contributing)
-1. [Tests](#tests)
 1. [Links](#links)
 1. [Contact](#contact)
 
@@ -35,7 +34,9 @@ Start by:
 
 4. Enter what you would like to say
 
-5. Click Create Post
+5. Click Add Content
+
+6. _then_ Click Generate Upscaled Post
 
 Your content will be upscaled using Gemini's API and then returned below for you to copy and paste as needed.
 
@@ -55,15 +56,7 @@ Post not quite right? ☹ Just click Start Over!
 
 ## License
 
-#### MIT
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-<a id="tests"></a>
-
-## Tests
-
-none
 
 <a id="contributing"></a>
 
