@@ -62,8 +62,6 @@ const PostCreator = () => {
       ...post,
       [name]: newValue,
     });
-
-    console.log(post);
   };
 
   const handleToneChange = (e) => {
@@ -74,7 +72,6 @@ const PostCreator = () => {
       ...post,
       [name]: newValue,
     });
-    console.log(post);
   };
 
   const addKeyword = (e) => {
@@ -84,7 +81,6 @@ const PostCreator = () => {
       ...post,
       tone: newValue,
     });
-    console.log(post);
   };
 
   const handleAudienceChange = (e) => {
@@ -94,7 +90,6 @@ const PostCreator = () => {
       ...post,
       [name]: newValue,
     });
-    console.log(post);
   };
 
   const copyText = () => {
@@ -116,10 +111,6 @@ const PostCreator = () => {
   const loadPage = () => {
     window.location.reload();
     window.location.top();
-  };
-
-  const forceUpdate = (e) => {
-    this.forceUpdate();
   };
 
   const handleSubmit = (e) => {
@@ -147,7 +138,6 @@ Platform: (platform name here)
 Post: (post text for selected platform here)
 `;
 
-    console.log(finalPost);
     setPostPreview(true);
     const sendPost = JSON.stringify(finalPost);
     onSent(sendPost);

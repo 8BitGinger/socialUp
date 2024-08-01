@@ -27,7 +27,7 @@ SocialUp↑ uses the Google's amazing AI Gemini to upscale your Social Media Con
 
 Start by:
 
-1. Select what Platforms you would like to share your Content
+1. Selecting what Platforms you would like to share your Content on
 
 2. Choose the Tone you would like to set for your Content
 
@@ -121,10 +121,11 @@ Used code from this tutorial/my gemini clone:
 
 Future Development Plans:
 
-- Implement a user login utilizing Firebase
-  -- Firebase
+- Implement a user login/profile
+  - Firebase for Authenticaton and Data Storage
 - Return individual results containers based on Platform
 - Create auto-post to Platform feature instead of Copy/Paste
+  - Utilizing mentioned Firebase Database, store credentials/sign in for popular social media and allow options to post from web app directly!
 - Convert to React Native for iOS/Android Apps
 
 <a id="links"></a>

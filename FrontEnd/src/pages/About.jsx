@@ -1,5 +1,5 @@
 import React from 'react';
-import banner from '../assets/images/aboutBanner.jpg';
+import banner from '../assets/images/aboutBanner2.jpg';
 import '../assets/css/about.css';
 import geminiLogo from '../assets/images/geminiBase2.png';
 
@@ -7,7 +7,7 @@ const About = () => {
   window.scrollTo(0, 0);
   return (
     <>
-      <section className="about">
+      <section className="about2">
         <img
           src={banner}
           alt="AI Created Image with text stating What is Social UP?"
@@ -28,6 +28,35 @@ const About = () => {
           it once.
         </p>
       </section>
+
+      <section className="about">
+        <div className="about_container">
+          <h2>Instructions:</h2>
+          <ul>
+            Start by:
+            <li>
+              1. Selecting what Platforms you would like to share your Content
+              on
+            </li>
+            <li>2. Choose the Tone you would like to set for your Content</li>
+            <li>3. Identify your Target Audience</li>
+            <li> 4. Enter what you would like to say </li>
+            <li>5. Click Add Content </li>
+            <li>
+              6. Click Generate Upscaled Post Your content will be upscaled
+              using Gemini&apos;s API and then returned below for you to copy
+              and paste as needed.
+            </li>{' '}
+            <br></br>
+            <li className="italic">
+              {' '}
+              Post not quite right? ☹ Edit the text in the Text Area or Just
+              click Reload!
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section className="about2">
         <h2>Features:</h2>
         <ul>
@@ -36,7 +65,7 @@ const About = () => {
           <li>Multi-Platform Formatting</li>
           <li>Simplicity and Ease!</li>
         </ul>
-        <img src={geminiLogo} alt="Gemini Style Logo" />
+        <img className="about3" src={geminiLogo} alt="Gemini Style Logo" />
         <h2>Supported Social Media:</h2>
 
         <ul>
@@ -48,29 +77,6 @@ const About = () => {
       </section>
 
       <section className="about">
-        <h2>Instructions:</h2>
-        <ul>
-          Start by:
-          <li>1. Select what Platforms you would like to share your Content</li>
-          <li>2. Choose the Tone you would like to set for your Content</li>
-          <li>3. Identify your Target Audience</li>
-          <li> 4. Enter what you would like to say </li>
-          <li>5. Click Add Content </li>
-          <li>
-            6. Click Generate Upscaled Post Your content will be upscaled using
-            Gemini&apos;s API and then returned below for you to copy and paste
-            as needed.
-          </li>{' '}
-          <br></br>
-          <li className="italic">
-            {' '}
-            Post not quite right? ☹ Edit the text in the Text Area or Just
-            click Reload!
-          </li>
-        </ul>
-      </section>
-
-      <section className="about2">
         <h2>
           Powered by <a href="https://gemini.google.com/app">Gemini</a>
         </h2>

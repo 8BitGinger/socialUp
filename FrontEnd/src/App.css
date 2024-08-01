@@ -103,6 +103,8 @@ main {
   align-items: center;
   font-family: 'Cinzel Decorative', cursive;
   font-size: 20px;
+
+  margin-bottom: 25px;
 }
 
 .footer img {
