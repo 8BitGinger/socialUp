@@ -2,7 +2,7 @@
 
 ### _Upscale your Social Media content with AI!_
 
-![logo](./FrontEnd/src/assets/images/readme-pics/socialLogoRM.jpg)
+![logo](./FrontEnd/src/assets/images/readme-pics/socialLogoRM2.png)
 
 ## Description
 
@@ -95,23 +95,23 @@ Used code from this tutorial/my gemini clone:
 <summary>See More Screenshots Here!</summary>
 <br>
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot2.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpHeader-screenshot.png)
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot3.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/platformScreenshot.png)
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot4.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/toneScreenshot.png)
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot5.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/audienceScreenshot.png)
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot6.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/postScreenshot.png)
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot7.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/aboutBannerScreenshot.png)
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot8.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/aboutInstructionsScreenshot.png)
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot9.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/contactScreenshot.png)
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpScreenshot10.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/geminiFooterScreenshot.png)
 
 </details>
 
@@ -121,12 +121,13 @@ Used code from this tutorial/my gemini clone:
 
 Future Development Plans:
 
-- Implement a user login/profile
+- Implement a User Login/Profile Page
   - Firebase for Authenticaton and Data Storage
+  - Save your favorite posts!
 - Return individual results containers based on Platform
 - Create auto-post to Platform feature instead of Copy/Paste
   - Utilizing mentioned Firebase Database, store credentials/sign in for popular social media and allow options to post from web app directly!
-- Convert to React Native for iOS/Android Apps
+- Create a Mobile App version using React Native for iOS/Android Apps
 
 <a id="links"></a>
 
@@ -135,6 +136,8 @@ Future Development Plans:
 ### [Repo Link](https://github.com/8BitGinger/socialUp)
 
 ### [Deployed Link](https://social-up.vercel.app/)
+
+### [My Portfolio](https://ryanfann.netlify.app/)
 
 <div align="center">
 
@@ -155,5 +158,7 @@ ryan.fann@gmail.com
 #### GitHub Username:
 
 [8BitGinger](https://github.com/8BitGinger)
+
+![8BitLogo](./FrontEnd/src/assets/images/readme-pics/8bitSmall.png)
 
 </div>

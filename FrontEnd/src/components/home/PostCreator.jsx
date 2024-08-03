@@ -121,17 +121,19 @@ const PostCreator = () => {
     const newAudience = uniq(post.audience.split(', '));
 
     let finalPost = `
-I want to create a social Media post that is:
+I want you to craft a social Media post that is:
 shared on these platforms: ${newSocial}
 The tone of the post is: ${newTone}
 The target audience is: ${newAudience}
-The basic content of the post should sound like: ${post.content}
+The basic content of the post should similar to: ${post.content}
 
 This needs to be a post that is engaging and will get people to interact with it.
 
-Feel free to add some emojis or other fun elements to the post to make it more engaging
+Feel free to add some emojis or other fun elements to the post to make it more dynamic.
 
+It needs to be production ready and ready to be shared on the selected platforms.
 
+Any content like links, images, or other media should be included in the response like this: [link here] or [image here] etc.
 
 I would like the response to be in this format:
 Platform: (platform name here)
