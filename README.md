@@ -41,6 +41,8 @@ Start by:
 
 Your content will be upscaled using Gemini's API and then returned below for you to copy and paste as needed.
 
+![screenshot](./FrontEnd/src/assets/images/readme-pics/aboutInstructionsScreenshot.png)
+
 Post not quite right? ☹ Edit the text in the Text Area or Just click Reload!
 
 [YouTube Walkthrough Video](www.youtube.com)
@@ -89,7 +91,7 @@ Used code from this tutorial/my gemini clone:
 
 ## Screenshot
 
-![screenshot](./FrontEnd/src/assets/images/readme-pics/computer-layout-template.png)
+![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpDevices.png)
 
 <details closed>
 <summary>See More Screenshots Here!</summary>
@@ -106,8 +108,6 @@ Used code from this tutorial/my gemini clone:
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/postScreenshot.png)
 
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/aboutBannerScreenshot.png)
-
-![screenshot](./FrontEnd/src/assets/images/readme-pics/aboutInstructionsScreenshot.png)
 
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/contactScreenshot.png)
 
