@@ -153,7 +153,7 @@ Post: (post text for selected platform here)
             <form className="post-container">
               <LayoutRow
                 name="social"
-                title="Where would you to share?"
+                title="Where would you like to share?"
                 image={mediaIconsLogo}
                 imageAlt="Social Media Icons"
               >
