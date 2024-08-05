@@ -18,7 +18,13 @@ import LayoutRow from './LayoutRow';
 // import helpers
 
 // import icons
-import { FaCopy, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import {
+  FaPause,
+  FaCopy,
+  FaFacebookF,
+  FaInstagram,
+  FaPlay,
+} from 'react-icons/fa';
 import { FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 import { IoReload } from 'react-icons/io5';
 
@@ -37,6 +43,7 @@ const PostCreator = () => {
   const [customContent, setCustomContent] = useState('');
   const [postPreview, setPostPreview] = useState(false);
   const [clicked, setClicked] = useState(false);
+  const [playing, setPlaying] = useState(false);
 
   const [post, setPost] = useState({
     social: [],
@@ -431,6 +438,7 @@ Post: (post text for selected platform here)
               <textarea
                 defaultValue={resultsData}
                 readOnly={loading ? true : false}
+                id="response"
               ></textarea>
               {!loading ? (
                 <div className="split2">
@@ -445,6 +453,34 @@ Post: (post text for selected platform here)
                       <IoReload />{' '}
                     </div>
                   </button>
+
+                  {!playing ? (
+                    <button
+                      className="btn__icon btn"
+                      onClick={() => {
+                        const text = document.getElementById('response').value;
+                        const utterance = new SpeechSynthesisUtterance(text);
+                        window.speechSynthesis.speak(utterance);
+                        setPlaying(true);
+                      }}
+                    >
+                      <div className="icon">
+                        <FaPlay />
+                      </div>
+                    </button>
+                  ) : (
+                    <button
+                      className="btn__icon btn"
+                      onClick={() => {
+                        window.speechSynthesis.cancel();
+                        setPlaying(false);
+                      }}
+                    >
+                      <div className="icon">
+                        <FaPause />
+                      </div>
+                    </button>
+                  )}
                 </div>
               ) : null}
             </div>
