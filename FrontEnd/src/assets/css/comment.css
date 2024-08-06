@@ -1,0 +1,37 @@
+.comment {
+  margin: auto;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  margin-bottom: 60px;
+  max-width: 500px;
+  overflow: hidden;
+  border: 2px solid dodgerblue;
+}
+
+.comment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-container h1 {
+  font-size: 1.6rem;
+  font-family: 'Cinzel Decorative', cursive;
+  margin: auto;
+  text-align: center;
+  text-wrap: wrap;
+  padding: auto;
+  width: 80%;
+}
+
+.comment-container textarea {
+  font-size: 1rem;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  height: 100px;
+  width: 70%;
+}

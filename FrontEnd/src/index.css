@@ -28,6 +28,11 @@ body::-webkit-scrollbar-thumb:hover {
   background: #ca1717;
 }
 
+textarea {
+  resize: none;
+  border-color: var(--accent-color);
+}
+
 @keyframes bg-animation {
   0% {
     background-position: left;
