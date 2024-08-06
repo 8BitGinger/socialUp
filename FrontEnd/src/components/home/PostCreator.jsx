@@ -462,9 +462,13 @@ Post: (post text for selected platform here)
                       onClick={() => {
                         const text = document.getElementById('response').value;
                         const utterance = new SpeechSynthesisUtterance(text);
-                        utterance.voice = voices[5];
+                        utterance.voice = voices[2];
                         utterance.rate = 0.9;
                         window.speechSynthesis.speak(utterance);
+                        setInterval(() => {
+                          speechSynthesis.pause();
+                          speechSynthesis.resume();
+                        }, 5000);
                         setPlaying(true);
                       }}
                     >
