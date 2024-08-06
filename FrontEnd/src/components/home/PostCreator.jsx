@@ -52,6 +52,8 @@ const PostCreator = () => {
     content: '',
   });
 
+  const voices = window.speechSynthesis.getVoices();
+
   const handleKeyword = (e) => {
     const { value } = e.target;
     setCustomKeyword(value);
@@ -460,6 +462,8 @@ Post: (post text for selected platform here)
                       onClick={() => {
                         const text = document.getElementById('response').value;
                         const utterance = new SpeechSynthesisUtterance(text);
+                        utterance.voice = voices[5];
+                        utterance.rate = 0.9;
                         window.speechSynthesis.speak(utterance);
                         setPlaying(true);
                       }}
