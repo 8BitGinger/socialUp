@@ -97,7 +97,11 @@ Used code from this tutorial/my gemini clone:
 <summary>See More Screenshots Here!</summary>
 <br>
 
+#### Main Page
+
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/socialUpHeader-screenshot.png)
+
+#### Post Creator Section
 
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/platformScreenshot.png)
 
@@ -107,9 +111,23 @@ Used code from this tutorial/my gemini clone:
 
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/postScreenshot.png)
 
+#### About Page
+
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/aboutBannerScreenshot.png)
 
+#### Contact Page
+
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/contactScreenshot.png)
+
+#### Comment and Reply Feature:
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/commentFeature.png)
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/comment1.png)
+
+![screenshot](./FrontEnd/src/assets/images/readme-pics/comment2.png)
+
+---
 
 ![screenshot](./FrontEnd/src/assets/images/readme-pics/geminiFooterScreenshot.png)
 

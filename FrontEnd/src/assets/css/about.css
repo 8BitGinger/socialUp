@@ -40,7 +40,7 @@
   border-bottom: orange double 3px;
   box-shadow: var(--container-shadow);
   border-radius: 8px;
-  padding: 20px;
+  padding: 20px 100px;
 }
 
 .about img,
@@ -109,6 +109,7 @@
 @media (max-width: 768px) {
   .about {
     width: 90%;
+    padding: 20px;
   }
 
   .about2 img {

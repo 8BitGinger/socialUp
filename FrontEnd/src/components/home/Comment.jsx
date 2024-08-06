@@ -23,7 +23,7 @@ const Comment = () => {
     let comment = document.getElementById('comment-input').value;
 
     let finalComment = `
-I want you to rewrite this comment/replay to a social media post/image/etc: ${comment}
+I want you to rewrite this comment/reply to a social media post/image/etc: ${comment}
 Create 3 separate options for the comment.
 Fix any grammatical errors and make it more engaging.
 I would like it to sound more intelligent, but still casual.
