@@ -11,6 +11,7 @@ import toneIcons from '../../assets/images/toneIcons.jpg';
 import audienceIcons from '../../assets/images/audienceIcons.jpg';
 import postIcons from '../../assets/images/postIcons.jpg';
 import userIcon from '../../assets/images/userIcon.png';
+import Comment from './Comment';
 
 // import components
 import LayoutRow from './LayoutRow';
@@ -44,6 +45,7 @@ const PostCreator = () => {
   const [postPreview, setPostPreview] = useState(false);
   const [clicked, setClicked] = useState(false);
   const [playing, setPlaying] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const [post, setPost] = useState({
     social: [],
@@ -128,6 +130,8 @@ const PostCreator = () => {
     const newSocial = uniq(post.social.split(', '));
     const newTone = uniq(post.tone.split(', '));
     const newAudience = uniq(post.audience.split(', '));
+
+    setSubmitted(true);
 
     let finalPost = `
 I want you to craft a social Media post that is:
@@ -495,6 +499,7 @@ Post: (post text for selected platform here)
           )}
         </div>
       </section>
+      {!submitted ? <Comment /> : null}
     </>
   );
 };
