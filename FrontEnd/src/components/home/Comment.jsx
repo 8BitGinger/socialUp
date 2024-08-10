@@ -3,6 +3,7 @@ import '../../assets/css/comment.css';
 import { Context } from '../../context/Context';
 import LayoutRow from '../../components/home/LayoutRow';
 import commentIconsLogo from '../../assets/images/commentIconsLogos.jpg';
+import experimental from '../../assets/images/experimental.png';
 
 const Comment = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -45,15 +46,23 @@ Option3: (3rd option for the comment)
     onSent(sendComment);
   };
 
+  const hideButton = (e) => {
+    e.preventDefault();
+    document.querySelector('.experimental').style.display = 'none';
+  };
+
   return (
     <>
       {!submitted ? (
         <div className="generator__container comment">
           {!loading ? (
             <form className="comment-container">
+              <button className="experimental" onClick={hideButton}>
+                <img src={experimental} alt="experimental warning" />
+              </button>
               <LayoutRow
                 name="social"
-                title="Upscale Your Comments/Replies too!"
+                title="Comment Creator"
                 image={commentIconsLogo}
                 imageAlt="Social Media Icons"
               ></LayoutRow>

@@ -86,6 +86,9 @@ const About = () => {
           <span className="italic">
             Submitted to the Gemini API Developer Competition as SocialUp↑
           </span>
+          <br></br>
+          Gemini may display inaccurate info, including about people, so
+          double-check its responses.
         </p>
       </section>
     </>

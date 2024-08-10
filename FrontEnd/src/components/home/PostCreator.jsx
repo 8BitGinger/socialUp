@@ -120,6 +120,8 @@ const PostCreator = () => {
   };
 
   const loadPage = () => {
+    setPlaying(false);
+    speechSynthesis.cancel();
     window.location.reload();
     window.location.top();
   };
@@ -140,7 +142,7 @@ The tone of the post is: ${newTone}
 The target audience is: ${newAudience}
 The basic content of the post should similar to: ${post.content}
 
-This needs to be a post that is engaging and will get people to interact with it.
+This needs to be engaging, intelligently written and will get people to interact with it.
 
 Feel free to add some emojis or other fun elements to the post to make it more dynamic.
 
@@ -447,53 +449,56 @@ Post: (post text for selected platform here)
                 id="response"
               ></textarea>
               {!loading ? (
-                <div className="split2">
-                  <button className="btn__icon btn" onClick={copyText}>
-                    <div className="icon">
-                      <FaCopy />{' '}
-                    </div>
-                  </button>
-
-                  <button className="btn__icon btn" onClick={loadPage}>
-                    <div className="icon">
-                      <IoReload />{' '}
-                    </div>
-                  </button>
-
-                  {!playing ? (
-                    <button
-                      className="btn__icon btn"
-                      onClick={() => {
-                        const text = document.getElementById('response').value;
-                        const utterance = new SpeechSynthesisUtterance(text);
-                        utterance.voice = voices[2];
-                        utterance.rate = 0.9;
-                        window.speechSynthesis.speak(utterance);
-                        setInterval(() => {
-                          speechSynthesis.pause();
-                          speechSynthesis.resume();
-                        }, 5000);
-                        setPlaying(true);
-                      }}
-                    >
+                <>
+                  <div className="split2">
+                    <button className="btn__icon btn" onClick={copyText}>
                       <div className="icon">
-                        <FaPlay />
+                        <FaCopy />{' '}
                       </div>
                     </button>
-                  ) : (
-                    <button
-                      className="btn__icon btn"
-                      onClick={() => {
-                        window.speechSynthesis.cancel();
-                        setPlaying(false);
-                      }}
-                    >
+
+                    <button className="btn__icon btn" onClick={loadPage}>
                       <div className="icon">
-                        <FaPause />
+                        <IoReload />{' '}
                       </div>
                     </button>
-                  )}
-                </div>
+
+                    {!playing ? (
+                      <button
+                        className="btn__icon btn"
+                        onClick={() => {
+                          const text =
+                            document.getElementById('response').value;
+                          const utterance = new SpeechSynthesisUtterance(text);
+                          utterance.voice = voices[2];
+                          utterance.rate = 0.9;
+                          window.speechSynthesis.speak(utterance);
+                          setInterval(() => {
+                            speechSynthesis.pause();
+                            speechSynthesis.resume();
+                          }, 5000);
+                          setPlaying(true);
+                        }}
+                      >
+                        <div className="icon">
+                          <FaPlay />
+                        </div>
+                      </button>
+                    ) : (
+                      <button
+                        className="btn__icon btn"
+                        onClick={() => {
+                          window.speechSynthesis.cancel();
+                          setPlaying(false);
+                        }}
+                      >
+                        <div className="icon">
+                          <FaPause />
+                        </div>
+                      </button>
+                    )}
+                  </div>
+                </>
               ) : null}
             </div>
           )}

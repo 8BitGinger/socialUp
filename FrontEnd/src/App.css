@@ -99,12 +99,21 @@ main {
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-family: 'Cinzel Decorative', cursive;
   font-size: 20px;
 
   margin-bottom: 25px;
+}
+
+.warning {
+  color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 18px;
+  width: 100%;
 }
 
 .footer img {
