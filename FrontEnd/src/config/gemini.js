@@ -15,8 +15,8 @@ async function runChat(prompt) {
   const generationConfig = {
     temperature: 0.9,
     // topK and topP are optional, removing if not strictly necessary can simplify
-    // topK: 1,
-    // topP: 1,
+    topK: 1,
+    topP: 1,
     maxOutputTokens: 2048,
   };
 
@@ -43,7 +43,7 @@ async function runChat(prompt) {
   try {
     // 💡 THE KEY CHANGE: Passing the prompt string directly
     const result = await model.generateContent({
-      contents: prompt, // Pass the prompt string directly
+      contents: [{ role: 'user', parts: [{ text: prompt }] }],
       generationConfig,
       safetySettings,
     });
