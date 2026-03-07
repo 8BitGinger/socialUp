@@ -31,7 +31,8 @@ main {
 .pageContainer {
   display: flex;
   flex-direction: column;
-
+background: #00b7ff;
+background: linear-gradient(44deg,rgba(0, 183, 255, 0.3) 0%, rgba(242, 182, 0, 0.2) 50%, rgba(128, 0, 255, 0.3) 100%);
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -48,7 +49,7 @@ main {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background: url(./assets/images/socialHeader3.jpg) no-repeat center
+  background: url(./assets/images/socialHeader3.png) no-repeat center
     center/cover;
   margin-top: 50px;
   position: relative;
@@ -114,6 +115,8 @@ main {
   font-weight: 300;
   font-size: 18px;
   width: 100%;
+  background-color: dodgerblue;
+  margin: 0;
 }
 
 .footer img {

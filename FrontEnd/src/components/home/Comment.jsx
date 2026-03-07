@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import '../../assets/css/comment.css';
 import { Context } from '../../context/Context';
 import LayoutRow from '../../components/home/LayoutRow';
-import commentIconsLogo from '../../assets/images/commentIconsLogos.jpg';
+import commentIconsLogo from '../../assets/images/commentIcons.png';
 import experimental from '../../assets/images/experimental.png';
 
 const Comment = () => {

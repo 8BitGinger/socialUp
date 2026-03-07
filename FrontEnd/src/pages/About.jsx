@@ -1,5 +1,5 @@
 import React from 'react';
-import banner from '../assets/images/aboutBanner2.jpg';
+import banner from '../assets/images/aboutBanner2.png';
 import '../assets/css/about.css';
 import geminiLogo from '../assets/images/geminiBase2.png';
 

@@ -6,10 +6,10 @@ import '../../assets/css/postGen.css';
 import uniq from 'underscore/modules/uniq.js';
 
 // import images
-import mediaIconsLogo from '../../assets/images/mediaIconsLogos.jpg';
-import toneIcons from '../../assets/images/toneIcons.jpg';
-import audienceIcons from '../../assets/images/audienceIcons.jpg';
-import postIcons from '../../assets/images/postIcons.jpg';
+import mediaIconsLogo from '../../assets/images/mediaIcons.png';
+import toneIcons from '../../assets/images/toneIcons.png';
+import audienceIcons from '../../assets/images/audienceIcons.png';
+import postIcons from '../../assets/images/postIcons.png';
 import userIcon from '../../assets/images/userIcon.png';
 import Comment from './Comment';
 
